@@ -158,34 +158,34 @@ if (isset($_POST['kelurahan'])) {
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td>Biaya Pendaftaran</td>
-                                        <td>Rp. 30.000,-</td>
+                                        <td class="text-left">Biaya Pendaftaran</td>
+                                        <td class="text-right">Rp. 30.000,-</td>
                                     </tr>
                                     <tr>
-                                        <td>Biaya Redaksi</td>
-                                        <td>Rp. 10.000,-</td>
+                                        <td class="text-left">Biaya Redaksi</td>
+                                        <td class="text-right">Rp. 10.000,-</td>
                                     </tr>
                                     <tr>
-                                        <td>Biaya PNBP</td>
-                                        <td>Rp. 20.000,-</td>
+                                        <td class="text-left">Biaya PNBP</td>
+                                        <td class="text-right">Rp. 20.000,-</td>
                                     </tr>
                                     <tr>
-                                        <td>Biaya Proses</td>
-                                        <td>Rp. 70.000,-</td>
+                                        <td class="text-left">Biaya Proses</td>
+                                        <td class="text-right">Rp. 70.000,-</td>
                                     </tr>
                                     <tr>
-                                        <td>Biaya Meterai</td>
-                                        <td>Rp. 10.000,-</td>
+                                        <td class="text-left">Biaya Meterai</td>
+                                        <td class="text-right">Rp. 10.000,-</td>
                                     </tr>
                                     <tr>
-                                        <td>Biaya Panggilan</td>
-                                        <td>Rp. <?php
-                                                $biayapanggilan = $biayaSidang != 0 ? $biayaSidang - 140000 : $biayaSidang;
-                                                echo number_format($biayapanggilan, 0, ',', '.') ?>,-</td>
+                                        <td class="text-left">Biaya Panggilan</td>
+                                        <td class="text-right">Rp. <?php
+                                                                    $biayapanggilan = $biayaSidang != 0 ? $biayaSidang - 140000 : $biayaSidang;
+                                                                    echo number_format($biayapanggilan, 0, ',', '.') ?>,-</td>
                                     </tr>
                                     <tr>
-                                        <td>Total Biaya</td>
-                                        <td class="font-weight-bold"><?= $totalBiayaSidang ?></td>
+                                        <td class="text-left">Total Biaya</td>
+                                        <td class="font-weight-bold text-rigth"><?= $totalBiayaSidang ?></td>
                                     </tr>
                                 </tbody>
 
