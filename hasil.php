@@ -98,7 +98,7 @@ if (isset($_POST['kelurahan'])) {
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/sasaja_logo.png">
 
     <!-- bootstrap select -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
