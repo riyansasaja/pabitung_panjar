@@ -19,13 +19,13 @@ if (isset($_POST['kelurahan']) && isset($_POST['kelurahan_dua'])) {
         if ($jenis == 'talak_murni') {
             # ini hitungan untuk talak murni
             $gugatan = 'Cerai Talak diajukan Suami';
-            $biayaSidang = ($biayaRadiusSatu * 2) + ($biayaRadiusDua * 3)  + 80000;
+            $biayaSidang = ($biayaRadiusSatu * 2) + ($biayaRadiusDua * 3)  + 140000;
             $totalBiayaSidang = 'Rp. ' . number_format($biayaSidang, 0, ',', '.') . ',-';
         }
         if ($jenis == 'gugat_murni') {
             # ini hitungan untuk gugat murni
             $gugatan = 'Cerai Gugat diajukan Istri';
-            $biayaSidang = $biayaRadiusSatu + ($biayaRadiusDua * 3)  + 80000;
+            $biayaSidang = $biayaRadiusSatu + ($biayaRadiusDua * 3)  + 140000;
             $totalBiayaSidang = 'Rp. ' . number_format($biayaSidang, 0, ',', '.') . ',-';
         }
     }
@@ -45,13 +45,13 @@ if (isset($_POST['kelurahan'])) {
         if ($jenis == 'talak_ecourt') {
             # ini hitungan talak_ecourt
             $gugatan = 'Cerai Talak diajukan Suami via e-court';
-            $biayaSidang = ($biayaRadiusSatu * 4) + 80000;
+            $biayaSidang = ($biayaRadiusSatu * 4) + 140000;
             $totalBiayaSidang = 'Rp. ' . number_format($biayaSidang, 0, ',', '.') . ',-';
         }
         if ($jenis == 'gugat_ecourt') {
             # ini hitungan untuk gugat ecourt
             $gugatan = 'Cerai Gugat diajukan Istri via e-court';
-            $biayaSidang = ($biayaRadiusSatu * 3) + 80000;
+            $biayaSidang = ($biayaRadiusSatu * 3) + 140000;
             $totalBiayaSidang = 'Rp. ' . number_format($biayaSidang, 0, ',', '.') . ',-';
         }
     }
@@ -158,6 +158,18 @@ if (isset($_POST['kelurahan'])) {
                             <table class="table">
                                 <tbody>
                                     <tr>
+                                        <td>Biaya Pendaftaran</td>
+                                        <td>Rp. 30.000,-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biaya Redaksi</td>
+                                        <td>Rp. 10.000,-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biaya PNBP</td>
+                                        <td>Rp. 20.000,-</td>
+                                    </tr>
+                                    <tr>
                                         <td>Biaya Proses</td>
                                         <td>Rp. 70.000,-</td>
                                     </tr>
@@ -168,7 +180,7 @@ if (isset($_POST['kelurahan'])) {
                                     <tr>
                                         <td>Biaya Panggilan</td>
                                         <td>Rp. <?php
-                                                $biayapanggilan = $biayaSidang != 0 ? $biayaSidang - 80000 : $biayaSidang;
+                                                $biayapanggilan = $biayaSidang != 0 ? $biayaSidang - 140000 : $biayaSidang;
                                                 echo number_format($biayapanggilan, 0, ',', '.') ?>,-</td>
                                     </tr>
                                     <tr>
